@@ -1,0 +1,23 @@
+$menufont: bolder 13px 'Source Sans Pro', sans-serif;
+
+
+
+nav {
+    a {
+        font: $menufont;
+    }
+}
+
+.navbar-left {
+    margin-left: 25px;
+}
+
+.navbar-left {
+    li {
+        padding-left: 15px;
+    }
+}
+
+.navbar-brand {
+    padding: 35px 15px;
+}
