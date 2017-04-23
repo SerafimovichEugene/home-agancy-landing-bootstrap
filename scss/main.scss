@@ -1,11 +1,33 @@
-$menufont: bolder 13px 'Source Sans Pro', sans-serif;
-
-
+$mainFontFamaly: 'Source Sans Pro',
+sans-serif;
+$menuFont: bolder 13px 'Source Sans Pro',
+sans-serif;
+$carouselFontFamaly: 'Lato',
+sans-serif;
+$mainFontColor: #506a85;
+$secondaryFontColor: #73879c;
+$thirdFontColor: #00bc9c;
+body {
+    font-family: $mainFontFamaly;
+    color: $mainFontColor;
+}
 
 nav {
     a {
-        font: $menufont;
+        font: $menuFont;
     }
+}
+
+h3 {
+    margin-top: 120px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .navbar-left {
@@ -21,3 +43,107 @@ nav {
 .navbar-brand {
     padding: 35px 15px;
 }
+
+#first-section-carousel {
+    margin-top: 111px;
+}
+
+.carousel {
+    font-family: $carouselFontFamaly;
+    img {
+        width: 100%;
+        min-width: 100;
+        height: auto;
+    }
+    h2 {
+        font-size: 60px;
+        color: white;
+        line-height: 1.128;
+    }
+    p {
+        font-size: 14px;
+        color: #a3b1bf;
+    }
+    .btn {
+        width: 295px;
+        height: 65px;
+    }
+}
+
+// .carousel-caption {
+// }
+// .first-carousel-caption {
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }
+.second-section {
+    // h3 {
+    // }
+    .text-center {
+        p {
+            margin-bottom: 80px;
+            font-size: 16px;
+        }
+    }
+    h4 {
+        font-size: 20px;
+        font-weight: 900;
+    }
+    i {
+        color: $thirdFontColor;
+    }
+    p {
+        margin-bottom: 80px;
+        font-size: 12px;
+        color: $secondaryFontColor;
+    }
+}
+
+.third-section {
+    background-color: #f2f5f7;
+    .text-center {
+        p {
+            margin-bottom: 80px;
+            font-size: 16px;
+            color: $secondaryFontColor;
+        }
+    }
+}
+
+.latest-works-1 {
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    h5 {
+        color: $thirdFontColor;
+        font-size: 20px;
+        font-weight: 900;
+        margin-top: 35px;
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        font-size: 10px;
+    }
+    -webkit-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.5);
+}
+
+.latest-works-2{
+    @extend .latest-works-1;
+    h5 {
+        color: $mainFontColor;
+    }
+}
+
+.latest-works-3 {
+    margin-top: 85px;
+    margin-bottom: 195px;
+    img {
+        width: 100%;
+    }
+}
+
