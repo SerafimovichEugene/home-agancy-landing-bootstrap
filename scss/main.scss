@@ -7,6 +7,8 @@ sans-serif;
 $mainFontColor: #506a85;
 $secondaryFontColor: #73879c;
 $thirdFontColor: #00bc9c;
+$third-section-bg: #f2f5f7;
+$fifth-section-bg: #2f4052;
 body {
     font-family: $mainFontFamaly;
     color: $mainFontColor;
@@ -21,8 +23,15 @@ nav {
 h3 {
     margin-top: 120px;
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 900;
+}
+
+h6 {
+    font-size: 22px;
+    color: white;
+    margin-top: 75px;
+    margin-bottom: 26px;
 }
 
 .container-fluid {
@@ -78,8 +87,6 @@ h3 {
 //     transform: translate(-50%, -50%);
 // }
 .second-section {
-    // h3 {
-    // }
     .text-center {
         p {
             margin-bottom: 80px;
@@ -101,22 +108,22 @@ h3 {
 }
 
 .third-section {
-    background-color: #f2f5f7;
+    background-color: $third-section-bg;
     .text-center {
         p {
             margin-bottom: 80px;
-            font-size: 16px;
+            font-size: 20px;
             color: $secondaryFontColor;
         }
     }
 }
 
 .latest-works-1 {
-    height: 500px;
+    position: relative;
+    // height: 500px;
     width: 100%;
     background-color: white;
-    h5 {
-        color: $thirdFontColor;
+    h5 {       
         font-size: 20px;
         font-weight: 900;
         margin-top: 35px;
@@ -126,24 +133,95 @@ h3 {
     }
     p {
         font-size: 10px;
+        padding-bottom: 20px;
     }
     -webkit-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.5);
     box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.5);
+    span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10%;
+        height: 10%;
+        transform: translate(-50%, -50%);
+        color: white;
+        z-index: 4;
+        opacity: 0;
+    }
 }
 
-.latest-works-2{
-    @extend .latest-works-1;
+.latest-works-1:hover {
+    .imgWrap {
+        opacity: 0.5;
+    }
+    span {
+        opacity: 0.7;
+    }
     h5 {
-        color: $mainFontColor;
+         color: $thirdFontColor;
     }
 }
 
 .latest-works-3 {
-    margin-top: 85px;
-    margin-bottom: 195px;
+    @extend .latest-works-1;
     img {
         width: 100%;
+        height: 100%;
     }
 }
 
+.imgWrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: $thirdFontColor;
+    opacity: 0;
+    z-index: 1;
+}
+
+.fourth-section {
+    height: 482px;
+    p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .btn {
+        width: 150px;
+        height: 50px;
+    }
+}
+
+.fifth-section {
+    height: 365px;
+    background-color: $fifth-section-bg;
+    .row {
+        background-color: $fifth-section-bg;
+    }
+    p {        
+        font-size: 16px;
+        color: $secondaryFontColor;
+    }
+    a {
+        font-weight: 700;
+        font-size: 16px;
+        color: $thirdFontColor;
+    }
+    .logo {
+        margin-bottom: 40px;
+    }
+    .footer-latest-works {
+        .col-md-6 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .col-xs-6 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
