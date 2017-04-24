@@ -9,6 +9,8 @@ $secondaryFontColor: #73879c;
 $thirdFontColor: #00bc9c;
 $third-section-bg: #f2f5f7;
 $fifth-section-bg: #2f4052;
+$footer-bg: #283645;
+
 body {
     font-family: $mainFontFamaly;
     color: $mainFontColor;
@@ -239,4 +241,19 @@ h6 {
     padding: 5px;
     background-color: #596675;
     border-radius: 5px;
+}
+
+footer {    
+    background-color: $footer-bg;
+    
+    a {
+        color: $secondaryFontColor;
+    }
+    a:hover {
+        color: $thirdFontColor;
+    }
+    p, ul {
+        margin: 20px 0;
+        color: $secondaryFontColor;
+    }
 }

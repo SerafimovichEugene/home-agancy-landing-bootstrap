@@ -167,3 +167,13 @@ h6 {
   padding: 5px;
   background-color: #596675;
   border-radius: 5px; }
+
+footer {
+  background-color: #283645; }
+  footer a {
+    color: #73879c; }
+  footer a:hover {
+    color: #00bc9c; }
+  footer p, footer ul {
+    margin: 20px 0;
+    color: #73879c; }
