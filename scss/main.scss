@@ -116,14 +116,16 @@ h6 {
             color: $secondaryFontColor;
         }
     }
+    .last-row {
+        margin-bottom: 195px;
+    }
 }
 
 .latest-works-1 {
-    position: relative;
-    // height: 500px;
+    position: relative; // height: 500px;
     width: 100%;
     background-color: white;
-    h5 {       
+    h5 {
         font-size: 20px;
         font-weight: 900;
         margin-top: 35px;
@@ -160,16 +162,20 @@ h6 {
         opacity: 0.7;
     }
     h5 {
-         color: $thirdFontColor;
+        color: $thirdFontColor;
     }
+    
 }
 
 .latest-works-3 {
+    
     @extend .latest-works-1;
-    img {
-        width: 100%;
-        height: 100%;
-    }
+    background-color: $fifth-section-bg;
+    box-shadow: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .imgWrap {
@@ -202,7 +208,7 @@ h6 {
     .row {
         background-color: $fifth-section-bg;
     }
-    p {        
+    p {
         font-size: 16px;
         color: $secondaryFontColor;
     }
@@ -215,13 +221,22 @@ h6 {
         margin-bottom: 40px;
     }
     .footer-latest-works {
-        .col-md-6 {
-            padding-left: 0;
-            padding-right: 0;
+        .row {
+            margin-left: 0;
+            margin-right: 0;
         }
         .col-xs-6 {
             padding-left: 0;
             padding-right: 0;
         }
     }
+    input{
+        min-width: 150px;
+    }
+}
+
+.input-group {
+    padding: 5px;
+    background-color: #596675;
+    border-radius: 5px;
 }
