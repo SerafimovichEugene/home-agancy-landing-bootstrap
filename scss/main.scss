@@ -10,7 +10,6 @@ $thirdFontColor: #00bc9c;
 $third-section-bg: #f2f5f7;
 $fifth-section-bg: #2f4052;
 $footer-bg: #283645;
-
 body {
     font-family: $mainFontFamaly;
     color: $mainFontColor;
@@ -20,6 +19,12 @@ nav {
     a {
         font: $menuFont;
     }
+}
+
+h2 {
+    font-size: 50px;
+    color: white;
+    line-height: 1.128;
 }
 
 h3 {
@@ -55,7 +60,7 @@ h6 {
     padding: 35px 15px;
 }
 
-#first-section-carousel {
+.first-section {
     margin-top: 111px;
 }
 
@@ -65,11 +70,6 @@ h6 {
         width: 100%;
         min-width: 100;
         height: auto;
-    }
-    h2 {
-        font-size: 60px;
-        color: white;
-        line-height: 1.128;
     }
     p {
         font-size: 14px;
@@ -81,13 +81,58 @@ h6 {
     }
 }
 
-// .carousel-caption {
-// }
-// .first-carousel-caption {
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-// }
+.carousel-control {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+}
+
+.carousel-control:hover {
+    background-color: #506a85;
+    color: $thirdFontColor;
+    border-radius: 6px;
+}
+
+.carousel-caption {
+    p {
+        font-size: 18px;
+    }
+}
+
+.first-carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.second-carousel-caption {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.second-carousel-caption:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.third-carousel-caption {
+    .wrapHeader {
+        height: 100px;
+        background-color: $mainFontColor;
+        display: table;
+        table-layout: fixed;
+        h2 {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+    }
+}
+
 .second-section {
     .text-center {
         p {
@@ -124,7 +169,7 @@ h6 {
 }
 
 .latest-works-1 {
-    position: relative; // height: 500px;
+    position: relative;
     width: 100%;
     background-color: white;
     h5 {
@@ -166,11 +211,9 @@ h6 {
     h5 {
         color: $thirdFontColor;
     }
-    
 }
 
 .latest-works-3 {
-    
     @extend .latest-works-1;
     background-color: $fifth-section-bg;
     box-shadow: none;
@@ -232,7 +275,7 @@ h6 {
             padding-right: 0;
         }
     }
-    input{
+    input {
         min-width: 150px;
     }
 }
@@ -243,16 +286,16 @@ h6 {
     border-radius: 5px;
 }
 
-footer {    
+footer {
     background-color: $footer-bg;
-    
     a {
         color: $secondaryFontColor;
     }
     a:hover {
         color: $thirdFontColor;
     }
-    p, ul {
+    p,
+    ul {
         margin: 20px 0;
         color: $secondaryFontColor;
     }

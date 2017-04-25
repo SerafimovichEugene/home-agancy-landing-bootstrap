@@ -1,14 +1,25 @@
-$navBackroundColor: #ffffff;
-$fontColor: #506a85;
-/////////////////////////////////////
-
-$navbar-default-bg: $navBackroundColor;
+$navbar-default-bg: #ffffff;
 $navbar-default-border: black;
 $navbar-height: 110px;
-$navbar-default-link-color: $fontColor;  
+$navbar-default-link-color: #506a85;  
 $btn-default-color: white;
 $btn-default-bg: #17a78b;
 $btn-default-border: #17a78b;
 
 
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}

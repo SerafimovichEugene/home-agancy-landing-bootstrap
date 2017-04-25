@@ -5480,7 +5480,7 @@ button.close {
 .carousel-control {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 30px;
   bottom: 0;
   width: 15%;
   opacity: 0.5;
@@ -5490,20 +5490,9 @@ button.close {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   background-color: transparent; }
-  .carousel-control.left {
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
   .carousel-control.right {
     left: auto;
-    right: 0;
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
+    right: 30px; }
   .carousel-control:hover, .carousel-control:focus {
     outline: 0;
     color: #fff;
@@ -5813,3 +5802,13 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-collapse.collapse {
+    display: none !important; }
+  .navbar-collapse.collapse.in {
+    display: block !important; }
+  .navbar-header .collapse, .navbar-toggle {
+    display: block !important; }
+  .navbar-header {
+    float: none; } }

@@ -5,6 +5,11 @@ body {
 nav a {
   font: bolder 13px "Source Sans Pro", sans-serif; }
 
+h2 {
+  font-size: 50px;
+  color: white;
+  line-height: 1.128; }
+
 h3 {
   margin-top: 120px;
   margin-bottom: 30px;
@@ -30,7 +35,7 @@ h6 {
 .navbar-brand {
   padding: 35px 15px; }
 
-#first-section-carousel {
+.first-section {
   margin-top: 111px; }
 
 .carousel {
@@ -39,16 +44,52 @@ h6 {
     width: 100%;
     min-width: 100;
     height: auto; }
-  .carousel h2 {
-    font-size: 60px;
-    color: white;
-    line-height: 1.128; }
   .carousel p {
     font-size: 14px;
     color: #a3b1bf; }
   .carousel .btn {
     width: 295px;
     height: 65px; }
+
+.carousel-control {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: 50%;
+  z-index: 5;
+  display: inline-block; }
+
+.carousel-control:hover {
+  background-color: #506a85;
+  color: #00bc9c;
+  border-radius: 6px; }
+
+.carousel-caption p {
+  font-size: 18px; }
+
+.first-carousel-caption {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.second-carousel-caption {
+  display: inline-block;
+  vertical-align: middle; }
+
+.second-carousel-caption:before {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+.third-carousel-caption .wrapHeader {
+  height: 100px;
+  background-color: #506a85;
+  display: table;
+  table-layout: fixed; }
+  .third-carousel-caption .wrapHeader h2 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
 
 .second-section .text-center p {
   margin-bottom: 80px;
@@ -174,6 +215,7 @@ footer {
     color: #73879c; }
   footer a:hover {
     color: #00bc9c; }
-  footer p, footer ul {
+  footer p,
+  footer ul {
     margin: 20px 0;
     color: #73879c; }
