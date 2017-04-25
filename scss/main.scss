@@ -97,7 +97,26 @@ h6 {
         font-size: 14px;
         color: #a3b1bf;
     }
+}
 
+.carousel-indicators {
+    bottom: -20px;
+    width: 110px;
+    height: 30px;
+    margin-left: 0;
+    border-radius: 6px;
+    background-color: white;
+    
+    li, .active{
+       width: 15px;
+       height: 15px;
+       border-radius: 15px;
+       margin-top: 7.5px;
+    }
+    li {
+        background-color: $fifth-section-bg;
+    }
+    
 }
 
 .carousel-control {
@@ -116,41 +135,57 @@ h6 {
 }
 
 .carousel-caption {
+    bottom: 0;
     p {
         font-size: 18px;
+        margin-bottom: 25px;
     }
 }
 
 .first-carousel-caption {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .second-carousel-caption {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.second-carousel-caption:before {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    p {
+        color: white;
+    }
 }
 
 .third-carousel-caption {
-    .wrapHeader {
-        padding: 10px 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.wrapHeader {
+    h2 {
         background-color: $mainFontColor;
-        display: table;
-        table-layout: fixed;
-        h2 {
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-            
-        }
+        display: inline-block;
+        padding: 15px;
     }
+}
+
+.fourth-carousel-caption {
+    position: absolute;
+    top: 35%;
+    transform: translate(0, -50%);
+    p {
+        color: white;
+    }
+}
+
+.fifth-carousel-caption {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .second-section {

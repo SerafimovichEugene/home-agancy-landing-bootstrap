@@ -64,6 +64,21 @@ h6 {
     font-size: 14px;
     color: #a3b1bf; }
 
+.carousel-indicators {
+  bottom: -20px;
+  width: 110px;
+  height: 30px;
+  margin-left: 0;
+  border-radius: 6px;
+  background-color: white; }
+  .carousel-indicators li, .carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin-top: 7.5px; }
+  .carousel-indicators li {
+    background-color: #2f4052; }
+
 .carousel-control {
   position: absolute;
   height: 60px;
@@ -77,32 +92,47 @@ h6 {
   color: #00bc9c;
   border-radius: 6px; }
 
-.carousel-caption p {
-  font-size: 18px; }
+.carousel-caption {
+  bottom: 0; }
+  .carousel-caption p {
+    font-size: 18px;
+    margin-bottom: 25px; }
 
 .first-carousel-caption {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
 
 .second-carousel-caption {
-  display: inline-block;
-  vertical-align: middle; }
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%); }
+  .second-carousel-caption p {
+    color: white; }
 
-.second-carousel-caption:before {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle; }
+.third-carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%); }
 
-.third-carousel-caption .wrapHeader {
-  padding: 10px 10px;
+.wrapHeader h2 {
   background-color: #506a85;
-  display: table;
-  table-layout: fixed; }
-  .third-carousel-caption .wrapHeader h2 {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center; }
+  display: inline-block;
+  padding: 15px; }
+
+.fourth-carousel-caption {
+  position: absolute;
+  top: 35%;
+  transform: translate(0, -50%); }
+  .fourth-carousel-caption p {
+    color: white; }
+
+.fifth-carousel-caption {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .second-section .text-center p {
   margin-bottom: 80px;
