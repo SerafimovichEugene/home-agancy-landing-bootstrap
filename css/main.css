@@ -10,6 +10,22 @@ h2 {
   color: white;
   line-height: 1.128; }
 
+@media (max-width: 768px) {
+  h2 {
+    font-size: 25px; } }
+
+@media (max-width: 768px) {
+  .btn-responsive {
+    padding: 8px 16px;
+    font-size: 80%;
+    line-height: 1; } }
+
+@media (min-width: 769px) {
+  .btn-responsive {
+    padding: 15px 30px;
+    font-size: 90%;
+    line-height: 1.2; } }
+
 h3 {
   margin-top: 120px;
   margin-bottom: 30px;
@@ -47,9 +63,6 @@ h6 {
   .carousel p {
     font-size: 14px;
     color: #a3b1bf; }
-  .carousel .btn {
-    width: 295px;
-    height: 65px; }
 
 .carousel-control {
   position: absolute;
@@ -82,7 +95,7 @@ h6 {
   vertical-align: middle; }
 
 .third-carousel-caption .wrapHeader {
-  height: 100px;
+  padding: 10px 10px;
   background-color: #506a85;
   display: table;
   table-layout: fixed; }

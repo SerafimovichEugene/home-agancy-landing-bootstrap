@@ -27,6 +27,28 @@ h2 {
     line-height: 1.128;
 }
 
+@media (max-width: 768px) {
+    h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-responsive {
+        padding: 8px 16px;
+        font-size: 80%;
+        line-height: 1;
+    }
+}
+
+@media (min-width: 769px) {
+    .btn-responsive {
+        padding: 15px 30px;
+        font-size: 90%;
+        line-height: 1.2;
+    }
+}
+
 h3 {
     margin-top: 120px;
     margin-bottom: 30px;
@@ -75,10 +97,7 @@ h6 {
         font-size: 14px;
         color: #a3b1bf;
     }
-    .btn {
-        width: 295px;
-        height: 65px;
-    }
+
 }
 
 .carousel-control {
@@ -121,7 +140,7 @@ h6 {
 
 .third-carousel-caption {
     .wrapHeader {
-        height: 100px;
+        padding: 10px 10px;
         background-color: $mainFontColor;
         display: table;
         table-layout: fixed;
@@ -129,6 +148,7 @@ h6 {
             display: table-cell;
             vertical-align: middle;
             text-align: center;
+            
         }
     }
 }
